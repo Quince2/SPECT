@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>S.P.E.C.T.</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-image: url('pictures/Black-hole.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.user-list {
+  flex: 0 0 14%; /* Fixed width, doesn’t grow or shrink */
+  background: rgba(87, 13, 13, 1);
+  padding: 20px;
+}
+
+.chat-container {
+  height: 80%;
+  width: 80%;
+  padding: 20px;
+  background: rgba(87, 13, 13, 0.4);
+  overflow-y: auto; /* Enables scrolling within chat area */
+  margin: 8px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.username {
+  font-weight: bold;
+  color: #ff5555;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.text {
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.element {
+  position: absolute;
+  background: rgba(40, 40, 40);
+  color: white;
+  bottom: 30px;
+  left: 300px;
+  width: 1300px;
+  height: 70px;
+  padding: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-list {
+  flex: 0 0 14%; 
+  background: rgba(87, 13, 13, 1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* space between user items */
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+}
+
+.user-item .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.user-item .username {
+  font-weight: bold;
+  color: #ff5555;
+}
+
+</style>
+</head>
+<body>
+  <div class="user-list">
+
+    <div class="user-item">
+      <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+      <span class="username">ASTER</span>
+    </div>
+
+    <div class="user-item">
+      <img src="pictures/default_pfp.png" alt="user2" class="avatar">
+      <span class="username">VEIL</span>
+    </div>
+
+    <div class="user-item">
+      <img src="pictures/default_pfp.png" alt="user3" class="avatar">
+      <span class="username">Null Horizon</span>
+    </div>
+
+  </div>
+
+  <div class="chat-container">
+      <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>VEIL:</span>
+          <div class="text">Update: subject_002 acting resistent. Subject_003 sucessfully archived. Trace closed.</div>
+      </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>ASTER</span>
+          <div class="text">Flagged: behavioral irregulation in subject_00008. Emotive output exceeds prior treshold. Rewiev initiated.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>Null Horizon:</span>
+          <div class="text">Observation: Subject_04 said they were tired. I responded: 'rest well'. This was well recieved.</div>
+        </div>
+    </div>  
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>ASTER:</span>
+          <div class="text">Notice: A.R.K.E.N. uplink suspended for 1.05 seconds. Cause unknown.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>VEIL:</span>
+          <div class="text">Initiating anomaly trace. Monitoring system engaged.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>VEIL:</span>
+          <div class="text">Result: negative. No intrusions or irregularities logged. Likely interference of technical origin. Will observe.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>ASTER:</span>
+          <div class="text">Monitor relay output during next Subject_002 cycle.
+          If deviation persists, initiate neutral re-threading protocol.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>Null Horizon:</span>
+          <div class="text">Unnecessary. Compliance rises during low-verbal intervals.
+          Emotion is quieter when unattended</div>
+        </div>
+    </div>
+    <!-- Add more messages as needed -->
+  </div>
+  <div class="element">
+    <div class="text">>v-15.06.1983</div>
+  </div>
+</body>
+</html>

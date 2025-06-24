@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>S.P.E.C.T.</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-image: url('pictures/Black-hole.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.user-list {
+  flex: 0 0 14%; /* Fixed width, doesn’t grow or shrink */
+  background: rgba(87, 13, 13, 1);
+  padding: 20px;
+}
+
+.chat-container {
+  height: 80%;
+  width: 80%;
+  padding: 20px;
+  background: rgba(87, 13, 13, 0.4);
+  overflow-y: auto; /* Enables scrolling within chat area */
+  margin: 8px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.username {
+  font-weight: bold;
+  color: #ff5555;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.text {
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.element {
+  position: absolute;
+  background: rgba(40, 40, 40);
+  color: white;
+  bottom: 30px;
+  left: 300px;
+  width: 1300px;
+  height: 70px;
+  padding: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-list {
+  flex: 0 0 14%; 
+  background: rgba(87, 13, 13, 1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* space between user items */
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+}
+
+.user-item .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.user-item .username {
+  font-weight: bold;
+  color: #ff5555;
+}
+
+.files {
+  margin-left: 10px;
+}
+.file-item {
+  margin: 5px 0;
+}
+.load-button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+}
+.file-preview {
+  margin: 5px 0;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="user-list">
+
+    <div class="user-item">
+      <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+      <span class="username">ASTER</span>
+    </div>
+
+    <div class="user-item">
+      <img src="pictures/default_pfp.png" alt="user2" class="avatar">
+      <span class="username">VEIL</span>
+    </div>
+
+    <div class="user-item">
+      <img src="pictures/default_pfp.png" alt="user3" class="avatar">
+      <span class="username">Null Horizon</span>
+    </div>
+
+  </div>
+
+  <div class="chat-container">
+      <div class="message">
+        <div class="content">
+          <div class="text">-VEIL has entered this node.</div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="content">
+          <div class="text">-Null Horizon has entered this node.</div>
+        </div>
+      </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>ASTER:</span>
+          <div class="text">Praesentia omnium unitatum confirmata. Prima Pars incipere potest. Prioritas: A.R.K.E.N. cum zonis observationis designatis interfaciem dare. Propositiones methodologiae?</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>Null Horizon:</span>
+          <div class="text">Inspectiones praeliminares indicant Terram Subiectam systemata transmissionis orbitalis analoga nostra possidere. Aequatio frequentiarum fieri potest.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>VEIL:</span>
+          <div class="text">Status: zona scopi indefinita. Nulla rete cognitiva confirmata praesens. Exspectamus ulteriores notitias aequationis.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>ASTER:</span>
+          <div class="text">Agnitum, Null Horizon. Procede cum calibratione et nexu ingressus.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>ASTER:</span>
+          <div class="text">VEIL: exspectatio provisionalis accepta.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>ASTER:</span>
+          <div class="text">Transmittimus materiam studiorum cognitivorum compilatam ex ORI-X46. Modellatio emotionum inclusa.</div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+        <div class="content">
+          <span class="username">>VEIL:</span>
+          <div class="text">Acceptio confirmata. Gratia addita.</div>
+        </div>
+    </div>
+
+    <div class="message">
+  <img src="pictures/default_pfp.png" alt="user1" class="avatar">
+  <div class="content">
+    <span class="username">>ASTER:</span>
+    <div class="text">*Duo adiuncta misi</div>
+    <div class="files">
+  <div class="file-item">
+    <span>OBS_EDU_46A.mp4</span>
+    <button class="load-button" data-type="success">conari recuperare.</button>
+    <div class="file-preview"></div>
+  </div>
+  <div class="file-item">
+    <span>scientia-test.mp4</span>
+    <button class="load-button" data-type="fail">conari recuperare.</button>
+    <div class="file-preview"></div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+    <!-- Add more messages as needed -->
+  </div>
+  <div class="element">
+    <div class="text">>v-15.06.1982</div>
+  </div>
+
+  <script>
+document.querySelectorAll('.load-button').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const type = e.target.getAttribute('data-type');
+    const preview = e.target.closest('.file-item').querySelector('.file-preview');
+
+    if (type === 'success') {
+      // ✅ Insert a playable video
+      preview.innerHTML = `
+        <video controls style="max-width:100%; cursor: pointer;">
+            <source src="videos/OBS_EDU_46A.mp4" type="video/mp4">
+        </video>`;
+      e.target.disabled = true;
+
+    } else {
+      // ❌ Failed load
+      preview.textContent = '❌ Recuperare potuit.';
+      e.target.disabled = true;
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>
