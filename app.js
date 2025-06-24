@@ -15,9 +15,9 @@ loginBtn.addEventListener("click", () => {
   }
 
   if (enteredPass === passwordForPage1) {
-    window.location.href = "dashboard1.html"; 
+    window.location.href = "Dashboard1.html"; 
   } else if (enteredPass === passwordForPage2) {
-    window.location.href = "dashboard2.html"; 
+    window.location.href = "Dashboard2.html"; 
   } else {
     errorMsg.textContent = "Invalid password.";
   }
@@ -26,5 +26,5 @@ loginBtn.addEventListener("click", () => {
 // Hidden button click listener
 const hiddenBtn = document.getElementById("hiddenBtn");
 hiddenBtn.addEventListener("click", () => {
-  window.location.href = "dashboard3.html"; // Replace with your target page
+  window.location.href = "Dashboard3.html"; // Replace with your target page
 });
